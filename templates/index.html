@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encyclopedia Project!</title>
+</head>
+<body>
+<title>Winter Project!</title>
+<span>Welcome to the store. </span>
+<br>
+<br>
+{%  if message  %}
+    {{ message }}
+    {% endif %}
+<form method = "POST" action = "/">
+    username: <input type = 'text' name = 'username' id = 'username'>
+    <br>
+    Password: <input type="password" name = 'password' id = 'password'>
+    <br>
+    <input type="submit" name = 'submit' value="Submit">
+
+</form>
+<a href="/registration" >Register</a>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registeraion Form</title>
+</head>
+<body>
+{% for mesasge in messages %}
+    {message}
+<br>
+{% endfor %}
+<br>
+<form method = "POST" action="">
+    Enter desired Username:
+    <br>
+    <input type="text" name = 'username' id = 'username'>
+    <br>
+    (Usernames must be between 4 and 20 characters in length)
+    <br>
+    Enter Passwor:
+    <br>
+    <input type="password" name = 'password' id = 'password'>
+    (Passwords must be between 4 and 20 characters in length)
+    <br>
+    <input type="submit" name = 'sunmit' value="Register">
+</form>
+
+</body>
+</html>
